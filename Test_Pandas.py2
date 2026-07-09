@@ -1,0 +1,27 @@
+import pandas as pd
+
+print("--- UKOL 2: DILTROVANI DAT ---")
+
+# Rozšířená tabulka
+import pandas as pd
+
+print("--- NAČÍTÁM DATA PRO ŠÉFA ---")
+
+# 1. Zdrojová data (tabulka prodejů)
+data = {
+    'Zakaznik': ['Petr', 'Anna', 'Jan', 'Petr', 'Anna', 'Petr'],
+    'Produkt': ['Notebook', 'Mobil', 'Monitor', 'Myš', 'Klávesnice', 'Sluchátka'],
+    'Cena': [25000, 15000, 6000, 1000, 2000, 3000]
+}
+
+df= pd.DataFrame(data)
+
+# --- ÚKOL ---
+# Sem musím napsat kód, který vybere jen řadky, kde je Cena větší než 500.
+# V Pandas se to dělá tak, že do hranatých závorek zqdam podmínku.
+
+# Řádek 23: Tady vytváříme tu tabulku
+drake_nakupy = df[df["Cena"] > 5000]
+
+# Řádek 30: Takhle to vytiskne TABULKU, ne jen text (VŠIMNI SI: NEJSOU TU UVOZOVKY)
+print(drake_nakupy) 
