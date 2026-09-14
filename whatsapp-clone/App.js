@@ -142,7 +142,7 @@ export default function App() {
         </View>
 
         <View style={styles.sidebarBottomIcons}>
-          <View style={styles.sidebarDivider} />
+          <View style={styles.sidebarDivide} />
           <MaterialCommunityIcons name="layers-outline" size={22} color="#aebac1" style={styles.layersIcon} />
           <View style={[styles.sidebarDivider, { marginBottom: 10 }]} />
           

@@ -26,12 +26,12 @@ while cap.isOpened():
 
     if hands:
         hand = hands[0]
-        lmList = hand["lmList"] # Seznam všech 21 bodů ruky
+        lmList = hand["lmList"] 
         
         # Bod 8 je špička ukazováčku
         x8, y8 = lmList[8][0], lmList[8][1]
 
-        # Zjistíme, které prsty jsou nahoře (vrátí pole např. [0, 1, 0, 0, 0] pro ukazováček)
+        # Zjistím, které prsty jsou nahoře (vrátí pole např. [0, 1, 0, 0, 0] pro ukazováček)
         fingers = detector.fingersUp(hand)
 
         # REŽIM KRESLENÍ: Pouze ukazováček je nahoře (index 1 v poli fingers)
